@@ -47,11 +47,13 @@ int main(void)
     thirdNode -> value = *z;
     thirdNode -> next = firstNode;
 
+    free(x);
+    free(y);
+    free(z);
+
 
     nodeRef = head -> next -> next -> next -> value;
 
     printf("%d \n", nodeRef);
-
-    
 
 };
